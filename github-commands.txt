@@ -1,3 +1,5 @@
 go to terminal and respective folder
 
 c1: git init
+c2:git add .
+c3:git commit -m "message"
