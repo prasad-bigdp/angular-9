@@ -1,0 +1,17 @@
+eIn angular, Every Component will have html and ts files.html file, we call as template and we call ts file as Component.
+Data-binding: dat binding means the interaction between component and template. there are two ways of data binding.
+1.One-Way Data binding
+there are so many we can achieve one way data binding, primarily classified as data binding 
+ a.From component to template:
+   i. String Interpolation:
+     it means any data in ts, we will represent in template within double braces.  eg: {{ name of value }}
+   ii. Property Binding:
+     it is used when properties of html(template) elements get defined from ts(component files) 
+     <element [propertyname]="value></element>  
+
+ b. From Template to Component:
+   iii. Event Binding:
+    it is used when an event got triggered in template and corresponding method to run in component
+    it is expresses with paranthesis...()
+    <button (click)="function-name()">click me</button>
+2. TWo-Way Data Binding

@@ -1,0 +1,3 @@
+new Angular Application
+goto terminal and respective folder
+ng new app-name --standalone=false

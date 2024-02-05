@@ -1,0 +1,11 @@
+<div id="counter">
+  <p [className]="isEvenOdd?'even':'odd'">{{count}}</p>
+  <p>{{isEvenOdd ? "EVEN" :"ODD"}}</p>
+  <div class="buttons">
+    <button (click)="incr()">+</button>
+    <button (click)="decr()">-</button>
+    <button (click)="reset()">reset</button>
+  </div>
+
+
+</div>

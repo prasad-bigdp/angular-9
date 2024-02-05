@@ -1,0 +1,30 @@
+#counter{
+    background-color: aliceblue;
+    height: 50vh;
+    width: 30vw;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#counter p
+{
+    font-size: 48px;
+}
+.even
+{
+    color: green;
+}
+.odd
+{
+    color: red;
+}
+button
+{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border-radius: 20px;
+}
