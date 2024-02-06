@@ -14,4 +14,7 @@ there are so many we can achieve one way data binding, primarily classified as d
     it is used when an event got triggered in template and corresponding method to run in component
     it is expresses with paranthesis...()
     <button (click)="function-name()">click me</button>
-2. TWo-Way Data Binding
+2. TWo-Way Data Binding:
+To achieve two data binding we have an directive named ngModel.
+Eg : <element [(ngModel)]="x">
+ngModel will work only if you import formsModule
