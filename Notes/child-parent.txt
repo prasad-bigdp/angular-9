@@ -1,0 +1,4 @@
+@output():
+
+1. In child component create an event and emit it
+2. parent component will trigger this event and get the data

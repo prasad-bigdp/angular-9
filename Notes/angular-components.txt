@@ -56,6 +56,11 @@ Components can communicate with other components by using @Input and @Output pro
 
 @Input: Allows a parent component to pass data to a child component.
 @Output: Allows a child component to emit events to a parent component.
+
+@viewChild/viewChildren
+
+template reference variables
+
 Component Interaction
 
 Components can interact with one another, and this interaction can be hierarchical, where parent components interact with child components and vice versa.
