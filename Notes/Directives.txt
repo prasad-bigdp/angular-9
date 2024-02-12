@@ -1,0 +1,16 @@
+Directives are used to create,manipulate,update elements in DOM Dynamically
+Directives are three types
+1. structural Directives
+2. property Directives
+3. custom Directives
+1.Structural Directives : these directives are used to create, manipulate structire of DOM elements in a component
+ There are three known structural directives
+ i. ngIf:
+ for angular 17:
+ @if (a > b) {
+  {{a}} is greater than {{b}}
+} @else if (b > a) {
+  {{a}} is less than {{b}}
+} @else {
+  {{a}} is equal to {{b}}
+}

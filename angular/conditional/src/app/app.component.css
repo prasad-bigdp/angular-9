@@ -1,0 +1,26 @@
+#main
+{
+    box-shadow: 8px 8px 8px black;
+    background-color: aliceblue;
+    height: 200px;
+    width: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button:nth-child(1)
+{
+   justify-self: flex-end;
+   
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+#switchBox
+{
+    box-shadow: 8px 8px 8px green;height: 100px;
+    width: 300px;
+
+}
