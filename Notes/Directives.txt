@@ -14,3 +14,84 @@ Directives are three types
 } @else {
   {{a}} is equal to {{b}}
 }
+ii.ngSwitch
+<!-- <h1>App Component</h1>
+<div *ngIf="isLogin ;then thenCase else elseCase">
+  
+</div>
+<ng-template #thenCase>
+  You are logged in as {{name}}, <button>Logout</button>
+</ng-template>
+<ng-template #elseCase>
+  You are not logged in , please login <button>Login</button>
+</ng-template>
+
+<div [ngSwitch]="day">
+   <p *ngSwitchCase="0">Sunday</p>
+  <p *ngSwitchCase="1">Monday</p>
+  <p *ngSwitchCase="2">Tuesday</p>
+  <p *ngSwitchCase="3">Wednesday</p>
+  <p *ngSwitchCase="4">Thursday</p>
+  <p *ngSwitchCase="5">Friday</p>
+  <p *ngSwitchCase="6">Saturday</p>
+  <p *ngSwitchDefault> Please Enter proper value(0-6)</p>
+</div>
+
+ -->
+
+ iii.ngFor
+ you can ngFor for the iterative DOM elements
+if arr=[2,3,5,6]
+ <div *ngFor="let i of arr">
+ {{i}}
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="main">
+  <button (click)="login()">Login</button>
+  <div *ngIf="isLogin" id="switchBox">
+      <input type="number" [(ngModel)]="day"><button (click)="click()">😒</button>
+      <div [ngSwitch]="day2">
+        <p *ngSwitchCase="0">Sunday</p>
+        <p *ngSwitchCase="1">Monday</p>
+        <p *ngSwitchCase="2">Tuesday</p>
+        <p *ngSwitchCase="3">Wednesday</p>
+        <p *ngSwitchCase="4">Thursday</p>
+        <p *ngSwitchCase="5">Friday</p>
+        <p *ngSwitchCase="6">Saturday</p>
+        <p *ngSwitchDefault> Please Enter proper value(0-6)</p>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+

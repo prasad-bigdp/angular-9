@@ -1,0 +1,32 @@
+<h1>Main</h1>
+<div>
+<div *ngFor="let i of arr;let k=index;let e=even;let o=odd">
+  {{i}} {{k}} {{e}} {{o}}
+</div>
+</div>
+<!-- arr2 = [
+{
+name: 'raj',
+age: 20,
+pic: 'https://oshiprint.in/image/cache/catalog/poster/new/mqp1380-320x320h.jpeg.webp',
+},
+{
+name: 'shekhar',
+age: 25,
+pic:
+'https://media.istockphoto.com/id/474935824/photo/minions-toy-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=Hnb9mpoc6-_669mnUHGdH6_sOziBFTdvtzV0efW64IA=',
+},
+]; -->
+
+<div id="minions">
+  <div *ngFor="let i of arr2" id="minion">
+    <img src={{i.pic}} alt={{i.name}}>
+    <h2>{{i.name}}</h2>
+    <p>{{i.age}}</p>
+  </div>
+</div>
+<div *ngFor="let i of arr3">
+{{i.id}}
+</div>
+
+

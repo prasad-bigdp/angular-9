@@ -40,7 +40,7 @@
 <div id="main">
   <button (click)="login()">Login</button>
   <div *ngIf="isLogin" id="switchBox">
-      <input type="number" [(ngModel)]="day"><button (click)="click()">😒</button>
+      <!-- <input type="number" [(ngModel)]="day"><button (click)="click()">😒</button> -->
       <div [ngSwitch]="day2">
         <p *ngSwitchCase="0">Sunday</p>
         <p *ngSwitchCase="1">Monday</p>

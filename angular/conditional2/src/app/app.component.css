@@ -1,0 +1,16 @@
+#minions{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 20px;
+}
+#minion
+{
+   height: 200px;
+   width:200px;
+   box-shadow: 5px 5px 5px black;
+}
+#minion img
+{
+    height: 100px;
+    width: 100px;
+}
