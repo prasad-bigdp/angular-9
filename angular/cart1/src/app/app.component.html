@@ -1,0 +1,10 @@
+<app-header [count]="c" #hc></app-header>
+<div id="products" [ngClass]="{'dark':hc.isDark}">
+  <div *ngFor="let p of products" class="product">
+    <img src={{p.image}} alt="{{p.title}}">
+    <h2>{{p.title | prasad}}</h2>
+    <p>Price: {{p.price|currency:"INR"}}</p>
+    <p>Date: {{dt|date}}</p>
+    <button (click)="add()">Add to cart</button>
+  </div>
+</div>

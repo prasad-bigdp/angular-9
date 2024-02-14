@@ -1,0 +1,27 @@
+#products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+
+}
+.product{
+height: 400px;
+width: 300px;
+box-shadow: 8px 8px 8px black;
+margin: 20px;
+text-align: center;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.product:hover
+{
+   box-shadow: 8px 8px 8px tomato; 
+   scale: 1.05;
+}
+.product img
+{
+    height: 200px;
+    width: 200px;
+}
