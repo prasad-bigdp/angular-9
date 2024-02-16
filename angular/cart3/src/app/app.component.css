@@ -1,0 +1,11 @@
+.product img
+{
+    height: 100px;
+    width: 100px;
+}
+.products
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}

@@ -1,0 +1,14 @@
+<h1>Products</h1>
+<div class="categories">
+  <button (click)="fun($event)">electronics</button>
+  <button (click)="fun($event)">jewelery</button>
+  <button (click)="fun($event)">men's clothing</button>
+  <button (click)="fun($event)">women's clothing</button>
+</div>
+<div class="products">
+  <div class="product" *ngFor="let p of products">
+    <img src={{p.image}} alt="">
+    <h2>{{p.title}}</h2>
+    <p>Price: {{p.price | currency:"INR"}}</p>
+  </div>
+</div>
