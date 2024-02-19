@@ -1,0 +1,14 @@
+<div class="container m-5 p-5 border border-2 borde">
+  <h1 class="text-center">CRUD Products</h1>
+  <button class="btn btn-primary">Add</button>
+  <div class="row">
+    <div *ngFor="let p of products" class="col-3 border border-2 border-primary rounded rounded-3 m-3 p-3">
+      <img src={{p.image}} alt={{p.title}}>
+      <h2>{{p.title}}</h2>
+      <p>{{p.price}}</p>
+      <button class="btn btn-success">update✏️</button>
+      <button class="btn btn-danger" (click)="del(p.id)">delete❌</button>
+    </div>
+  </div>
+
+</div>

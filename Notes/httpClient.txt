@@ -1,0 +1,11 @@
+httpClient is a service which is used to fetch the http requests. it works operations like create,read,update and delete
+
+API: application programming interface
+backend will create a server with a end point
+
+creating end point may require a backend and data base or BAAS(backend as a service) like firebase or dummy servers like json-server
+
+create db.json in any folder and give an array of objects as json ini it and follow below commands
+
+npm install -g json-server
+json-server db.json --watch
