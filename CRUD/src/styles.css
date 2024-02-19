@@ -1,2 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.hidden
+{
+ display: none;
+}
+.form
+{
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  left: 30%;
+  background-color: aqua;
+  padding: 50px;
+  margin: 10px;
+}
+.overlay
+{
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  z-index: 1;
+}

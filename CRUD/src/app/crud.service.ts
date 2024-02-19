@@ -14,4 +14,11 @@ export class CrudService {
   {
     return this.hc.delete(`http://localhost:3000/products/${id}`);
   }
+  postData(data: any)
+  {
+    return this.hc.post('http://localhost:3000/products',data)
+  }
+  putData(data: any, id: number) {
+    return this.hc.put(`http://localhost:3000/products/${id}`,data);
+  }
 }

@@ -1,12 +1,30 @@
 <div class="container m-5 p-5 border border-2 borde">
   <h1 class="text-center">CRUD Products</h1>
-  <button class="btn btn-primary">Add</button>
+  <button class="btn btn-primary" (click)="open()">Add</button>
+  <div [ngClass]="{'hidden':hide}">
+    <form class="form">
+        <h2>My form</h2>
+        <button style="float: right;" (click)="close()">❌</button>
+        <input type="number" class="form-control" placeholder="Enter the id" name="id" [(ngModel)]="id" /><br><br>
+        <input type="text" class="form-control" placeholder="Enter the Title" name="title" [(ngModel)]="title"/><br><br>
+        <input class="form-control" type="text" placeholder="Enter the Price" name="price" [(ngModel)]="price" /><br><br>
+        <input class="form-control" type="text" placeholder="Enter the image url" name="image" [(ngModel)]="url"><br><br>
+        <button class="btn btn-primary" (click)="submit()">submit</button>
+        <button class="btn btn-primary" (click)="update($event)">update</button>
+    </form>
+  </div>
+
+
+
+
+
+
   <div class="row">
     <div *ngFor="let p of products" class="col-3 border border-2 border-primary rounded rounded-3 m-3 p-3">
-      <img src={{p.image}} alt={{p.title}}>
+      <img src={{p.image}} alt={{p.title}} class="img-fluid">
       <h2>{{p.title}}</h2>
       <p>{{p.price}}</p>
-      <button class="btn btn-success">update✏️</button>
+      <button class="btn btn-success" (click)="update(p.id)">update✏️</button>
       <button class="btn btn-danger" (click)="del(p.id)">delete❌</button>
     </div>
   </div>
