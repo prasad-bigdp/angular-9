@@ -1,0 +1,11 @@
+Project: E-commerce
+Instructions:
+start a new angular app  -- ng new app-name --standalone=false
+1. To create component- ng generate component component-name
+2. create components header,footer,Home,About,Products,product,contact,login,signup,notFound
+3.Goto routing.module file and configure the routing.
+in routes array, mention an object with path and component
+for dynamic routing 'path/:value'
+for notfound '**'
+mention router outlet also
+4. goto header and footer and complete them

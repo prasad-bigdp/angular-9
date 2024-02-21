@@ -7,16 +7,22 @@
       "image": "../assets/images/earth.jpg"
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "gkjhjh",
       "price": "25225",
       "image": "https://static.vecteezy.com/system/resources/thumbnails/025/284/015/small/close-up-growing-beautiful-forest-in-glass-ball-and-flying-butterflies-in-nature-outdoors-spring-season-concept-generative-ai-photo.jpg"
     },
     {
-      "id": 666366,
+      "id": "666366",
       "title": "jgjhgjhgjhhg",
       "price": "8585",
       "image": "https://static.vecteezy.com/system/resources/thumbnails/025/284/015/small/close-up-growing-beautiful-forest-in-glass-ball-and-flying-butterflies-in-nature-outdoors-spring-season-concept-generative-ai-photo.jpg"
+    },
+    {
+      "id": 0,
+      "title": "",
+      "price": 0,
+      "image": ""
     }
   ]
 }

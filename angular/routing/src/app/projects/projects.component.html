@@ -1,0 +1,7 @@
+<div class="projects">
+    <div *ngFor="let p of data">
+     <h2>{{p.name}}</h2>
+     <h3>{{p.email}}</h3>
+     <button><a routerLink="/project/{{p.id}}">Goto page</a></button>
+    </div>
+</div>

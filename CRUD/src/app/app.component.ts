@@ -50,10 +50,8 @@ export class AppComponent {
       }
     this.cs.postData(newData).subscribe((data) => { console.log(data); this.products = data;window.location.reload() })
   }
-  update(e:any)
+  update(id:any)
   {
-    console.log(e.target)
-    this.id = e.target.id;
     this.open();
     let newData = {
       id: this.id,

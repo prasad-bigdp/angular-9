@@ -1,0 +1,21 @@
+<div class="topProducts">
+    <h1>Our Top Products</h1>
+    <div class="products">
+        <div class="product" *ngFor="let p of topProducts">
+        <img src={{p.thumbnail}} alt={{p.title}}>
+         <a href="/product/{{p.id}}"><h2>{{p.title}}</h2></a>
+         <p>Price: <strong>{{p.price | currency:"INR"}}</strong></p>
+         <p>Rating:{{p.rating}}/5</p>
+
+        </div>
+    </div>
+    <button>See all Products</button>
+</div>
+<div class="topProducts">
+    <h1>Our Categories</h1>
+    <div class="categories" >
+        <div class="product" *ngFor="let p of categories">
+            <h2>{{p}}</h2>
+        </div>
+    </div>
+</div>
