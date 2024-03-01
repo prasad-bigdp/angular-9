@@ -11,12 +11,18 @@ export class ProductComponent {
   id!: number;
   product: any;
   constructor(private ds:DataService,r: ActivatedRoute,) {
-    r.params.subscribe((data) => console.log(data[ 'id' ]));
+    r.params.subscribe((data) => {
+      this.id= data['id'];
+      this.ds
+        .getProduct(this.id)
+        .subscribe((data: any) => (this.product = data));
+    }
+    );
    
   }
   ngOnInit()
   {
-     this.ds.getProduct(this.id).subscribe((data:any) => (this.product = data));
+     
   }
 
 }

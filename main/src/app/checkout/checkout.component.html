@@ -1,0 +1,14 @@
+<div>
+    <h1>Products</h1>
+        <p style="text-align: right;">Total Price: <span>{{total |currency:"INR" }}</span></p>
+
+    <div class="items">
+        <div class="items" *ngFor="let i of items;let in =index" style="display: flex;">
+        <img src={{i.thumbnail}} alt={{i.title}} height="100" width="100">
+        <h2>{{i.title}}</h2>
+        <p>Price:{{i.price |currency:"INR"}}</p>
+        <button (click)="remove(in)">❌</button>
+        </div>
+    </div>
+    <button>checkout</button>
+</div>

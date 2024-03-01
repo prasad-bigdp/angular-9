@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewChecked, Component, OnChanges } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  c = 0;
+  constructor(private ds:DataService)
+  {
+       this.ds.cartObs.subscribe((data:any)=>this.c=data)
+  }
+ 
 }

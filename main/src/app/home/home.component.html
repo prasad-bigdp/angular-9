@@ -6,7 +6,7 @@
          <a href="/product/{{p.id}}"><h2>{{p.title}}</h2></a>
          <p>Price: <strong>{{p.price | currency:"INR"}}</strong></p>
          <p>Rating:{{p.rating}}/5</p>
-
+           <button (click)="add(p)">Add To Cart</button>
         </div>
     </div>
     <button>See all Products</button>

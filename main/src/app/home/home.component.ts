@@ -14,5 +14,9 @@ export class HomeComponent {
     this.ds.getData(10).subscribe((data: any) => this.topProducts = data.products);
     this.ds.getCategories().subscribe((data:any)=>this.categories=data)
   }
-
+  add(p:any)
+  {
+    console.log(p)
+    this.ds.add(p)
+  }
 }
